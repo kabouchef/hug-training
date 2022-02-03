@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hug-training
+  data:
+    mongodb:
+      uri: ${DATABASE_URL:mongodb+srv://admin:admin@cluster0.hho3j.mongodb.net/HUG?retryWrites=true&w=majority}
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+application:
+  title: HUG-training
+  version: 1.0.0
+
+springboot:
+  version: 2.6.3
+
+server:
+  servlet:
+    context-path: /hug-training
